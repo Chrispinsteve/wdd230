@@ -1,11 +1,37 @@
-@media screen and (min-width: 500px){
+@media screen and (min-width: 767px) {
     header {
+        max-width: 48rem;
+        font-family: 'Roboto', sans-serif;
+        padding: 1rem;
+        margin: 1rem auto;
         background: black;
         color: white;
+        text-align: center;
     }
 
-    main{
+    main {
+        max-width: 48rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        padding: 1rem;
+        margin: 1rem auto;
+        font-family: 'Roboto', sans-serif;
+        background: burlywood;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+        background: rgb(255, 255, 255);
+    }
+
+    footer{
+        max-width: 767px;
+        font-family: 'Roboto', sans-serif;
+        padding: 1rem;
+        color: aliceblue;
+        background: black;
+        margin: 1rem auto;
+        text-align: center;
     }
 }
