@@ -1,0 +1,44 @@
+@media (max-width: 767px) {
+    body{
+        font-family: 'Roboto', sans-serif;
+    }
+
+ 
+    
+    header, main, footer {
+        max-width: 640px;
+        margin: 1rem auto;
+        border: 1px solid rgb(0, 0, 0);
+        background: burlywood;
+        padding: 1rem;
+    }   
+    
+    header{
+        text-align: center;
+        color: white;
+        background: black;
+    }
+    
+    main{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+        overflow: hidden;
+    }
+    
+    section{
+        padding: 1rem;
+        background: rgb(255, 255, 255);
+        align-items: center;
+        border-radius: 2%;
+        overflow: hidden;
+    }
+    
+    footer{
+        color:white;
+        background: black;
+        font-weight: bold;
+        text-align: center;
+    }
+} 
