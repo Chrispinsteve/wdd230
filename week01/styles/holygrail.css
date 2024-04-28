@@ -1,0 +1,44 @@
+.parent{
+    display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header{
+    padding: 2rem;
+    background: pink;
+    font-weight: 700;
+    color: white;
+    grid-column: 1 / 4;
+}
+
+.left-side{
+    padding: 13rem 2.3rem;
+    background: rgb(101, 214, 255);
+    font-weight: 700;
+    color: white;
+    grid-column: 1 / 2;
+}
+
+main{
+    padding: 13rem 5rem;
+    background: rgba(255, 146, 106, 0.888);
+    font-weight: 700;
+    color: white;
+    grid-column: 2 / 3;
+}
+
+.right-side{
+    padding: 13rem 2.3rem;
+    background: yellow;
+    font-weight: 700;
+    color: white;
+    grid-column: 3 / 4;
+}
+
+footer{
+    padding: 2rem;
+    background: rgb(86, 178, 86);
+    font-weight: 700;
+    color: white;
+    grid-column: 1 / 4;
+}
