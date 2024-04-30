@@ -1,30 +1,49 @@
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    padding: 0.5rem;
+}
+
+/* Styling for smaller screens */
 @media (max-width: 767px) {
-    
-    nav{
-        margin-top: -13%;
-        background: none;
+    nav {
+        flex-direction: column; /* Vertical layout for smaller screens */
+        align-items: flex-start; /* Align items at the start */
+        margin-top: 0; /* Adjust margin */
+        padding: 1rem; /* Adjust padding */
+        background: none; /* Remove background color */
     }
     
-    header img{
-        width: 89px;
+    nav a {
+        padding: 0.5rem 0; /* Adjust padding for vertical layout */
     }
 
-    header span{
-        margin-bottom: -5%;
+    header img {
+        width: 89px; /* Adjust image size for smaller screens */
     }
 
-    main h1{
+    header span {
+        margin-bottom: -5%; /* Adjust margin */
+    }
+
+    main h1 {
         font-size: 21px;
-        grid-column: 1;
-        margin-top: -5%;
+        grid-column: 1; /* Adjust grid layout */
+        margin-top: -5%; /* Adjust margin */
     }
 
-    .card{
-        font-size: 16px;
+    .card {
+        font-size: 16px; /* Adjust font size */
     }
 
-    .card h2{
-        font-size: 18px;
+    .card h2 {
+        font-size: 18px; /* Adjust font size */
     }
-
 }
