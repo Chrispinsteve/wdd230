@@ -14,7 +14,6 @@ header {
     box-shadow: 0 0 5px rgba(129, 129, 129, 0.517);
 }
 
-
 nav {
     display: flex;
 }
@@ -56,6 +55,7 @@ main{
 
 .paralink{
     color: rgb(255, 180, 180);
+    cursor: pointer;
 }
 
 h1{
