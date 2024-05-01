@@ -9,7 +9,7 @@ header {
     display: flex;
     justify-content: space-between;
     margin: 8px auto;
-    padding: 1rem auto;
+    padding: 1rem;
     background: white;
     box-shadow: 0 0 5px rgba(129, 129, 129, 0.517);
 }
