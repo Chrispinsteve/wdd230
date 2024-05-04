@@ -31,7 +31,7 @@ header span {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(17, 139, 205);
     font-size: 21px;
     padding: 0.5rem;
 }
@@ -52,7 +52,7 @@ nav a {
     font-family: 'roboto', sans-serif;
     font-size: 21px;
     text-decoration: none;
-    color: black;
+    color: #2389d2;
     margin-left: 5%;
 }
 
@@ -60,7 +60,7 @@ nav a {
 main {
     display: grid;
     font-family: 'Roboto', sans-serif;
-    margin-top: 5%;
+    margin-top: 5rem;
     padding: 5rem;
     margin: auto;
     gap: 21px;
@@ -81,7 +81,8 @@ main h1 {
 }
 
 footer {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
+    margin-top: 1.5rem;
     font-family: 'Roboto', sans-serif;
     background: gainsboro;
 }
@@ -89,6 +90,8 @@ footer {
 footer p {
     text-align: center;
 }
+
+
 
 @media screen and (min-width: 1170px) {
 
