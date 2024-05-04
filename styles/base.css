@@ -1,27 +1,46 @@
-
-nav {
-    display: flex;
-    flex-direction: row;
-}
-
-nav a {
-    text-decoration: none;
-    color: black;
-    font-size: 21px;
-    padding: 0.5rem;
-}
-
 @media (max-width: 1170px) {
-    nav {
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0;
-        padding: 1rem;
-        background: none;
+
+    #menu::before {
+        content: "☰";
     }
-    
-    nav a {
-        padding: 0.5rem 0;
+
+    #menu.open::before {
+        content: "x";
+    }
+
+    .navalist {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 1rem 2rem;
+    }
+
+    .navalist a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #2389d2;
+    }
+
+    .navalist a:hover {
+        color: #006aab;
+    }
+
+
+    #menu {
+        font-size: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1.8rem;
+        right: 2.5rem;
+    }
+
+    /* when the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
     }
 
     header img {
@@ -38,11 +57,38 @@ nav a {
         margin-top: -5%;
     }
 
+
     .card {
         font-size: 16px;
+        background: rgb(0, 166, 226);
+
     }
 
     .card h2 {
         font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 518px) {
+        
+    body{
+        overflow-x: hidden;
+    }
+      ul{
+        display: block;
+        min-width: 2rem;
+        margin-left: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 376px) {
+        
+    main{
+        overflow-x: hidden;
+    }
+      ul{
+        display: block;
+        max-width: 5rem;
+        min-width: 3rem;
     }
 }
