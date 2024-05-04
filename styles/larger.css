@@ -1,1 +1,109 @@
 
+#mode{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    justify-content: flex-start;
+}
+
+*body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    border-radius: 50%;
+    margin-left: 8%;
+}
+
+header span {
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(17, 139, 205);
+    font-size: 21px;
+    padding: 0.5rem;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem;
+    margin-left: 1rem;
+    margin-top: -13%;
+    background: gainsboro;
+}
+
+nav a {
+    font-family: 'roboto', sans-serif;
+    font-size: 21px;
+    text-decoration: none;
+    color: #2389d2;
+    margin-left: 5%;
+}
+
+
+main {
+    display: grid;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5rem;
+    padding: 5rem;
+    margin: auto;
+    gap: 21px;
+}
+
+main h1 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    grid-column: 1/3;
+}
+
+.card {
+    display: grid;
+    padding: 20px 1rem;
+    border-radius: 5px;
+    background: rgb(0, 166, 226);
+}
+
+footer {
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    background: gainsboro;
+}
+
+footer p {
+    text-align: center;
+}
+
+@media screen and (min-width: 1170px) {
+
+    #menu {
+        display: none;
+    }
+
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .navigation a {
+        display: block;
+        flex: 1 1 100%;
+    }
+}
