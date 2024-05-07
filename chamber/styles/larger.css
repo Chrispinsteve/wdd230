@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    max-width: 1534px;
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px auto;
+    padding: 0.3rem;
+    background: white;
+    box-shadow: 0 0 5px rgba(129, 129, 129, 0.517);
+}
+nav {
+    display: flex;
+}
+
+header img {
+    width: 300px;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(167, 0, 0);
+    padding: 2rem 3.34rem;
+}
+
+a:hover {
+    transition: all .55s ease;
+    border-bottom: 1px solid rgb(167, 0, 0);
+}
+
+@media screen and (min-width: 768.1px) {
+    #menu {
+        display: none;
+        background: none;
+    }
+}
+/*--------------  "DIV" "MAIN" "FOOTER"  ---------------*/
+/*---- "DIV" General ----*/
+.general {
+    display: flex;
+    flex-wrap: wrap;
+    background: whitesmoke;
+    overflow-x: hidden;
+}
+
+
+/*---- "DIV" Left-side ----*/
+.left-side {
+    display: flex; /* Utilisation de Flexbox */
+    flex-direction: column; /* Aligner les éléments de manière verticale */
+    justify-content: flex-start; /* Alignement en haut */
+    align-items: flex-start; /* Alignement à gauche */
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 21px;
+    background: rgb(226, 226, 226);
+}
+
+
+div a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgb(167, 0, 0);
+    padding: 13px;
+    margin: 8px;
+    background: rgb(255, 255, 255);
+    border-radius: 13px;
+}
+
+div a:hover {
+    transition: all .55s ease;
+    border-bottom: none;
+    transform: translateX(5px);
+}
+
+/*---- "MAIN" ----*/
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(226, 226, 226);
+    border-radius: 21px;
+    margin: 1rem;
+}
+
+/*---- "FOOTER" ----*/
+footer {
+    text-align: center;
+    padding: 0.5rem;
+    background: rgb(144, 0, 0);
+    color: white;
+}
+
+/*---- "SECTION" and "CONTENTS" "ARTICLE"----*/
+.content-1,
+.content-2,
+.content-3 {
+    display: flex;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 8px;
+    background: whitesmoke;
+}
+
+article {
+    padding: 1rem;
+    background: rgb(232, 232, 232);
+    border-radius: 8px;
+}
