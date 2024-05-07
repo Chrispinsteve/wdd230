@@ -92,6 +92,12 @@ main {
     margin: 1rem;
 }
 
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 21px;
+    color: rgb(68, 68, 68);
+}
+
 /*---- "FOOTER" ----*/
 footer {
     text-align: center;
