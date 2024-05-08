@@ -135,7 +135,8 @@ footer {
 /*---- "SECTION" and "CONTENTS" "ARTICLE"----*/
 .content-1,
 .content-2,
-.content-3 {
+.content-3,
+.weather {
     display: grid;
     padding: 1rem;
     margin: 1rem;
@@ -147,8 +148,10 @@ footer {
 
 article {
     display: block;
-    max-width: 265px;
+    max-width: 300px;
     padding: 1rem;
+    margin: 8px;
+    margin-left: 21px;
     background: rgb(232, 232, 232);
     border-radius: 8px;
 }
