@@ -56,7 +56,7 @@ function displayList(item){
     input.focus();
     });
 
-    console.log('I laughed when i see this "I like to copy code instead of typing it out of myself and trying to understand it."');
+    console.log('I laughed when I see this "I like to copy code instead of typing it out of myself and trying to understand it."');
 }
 
 function setChapterList () {
