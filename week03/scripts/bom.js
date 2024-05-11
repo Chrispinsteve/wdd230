@@ -24,7 +24,7 @@ button.addEventListener('click', () => {
     }
 })
 
-/* --------------------LOCAL STORAGE---------------------*/
+/*--------------------LOCAL STORAGE---------------------*/
 
 let chapterArray = getChapterList () || [];
 
