@@ -21,7 +21,7 @@ body {
     justify-content: space-between;
 }
 
-img {
+header img {
     border-radius: 50%;
     margin-left: 8%;
 }
@@ -63,6 +63,7 @@ nav a {
 main {
     display: grid;
     font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
     margin-top: 5rem;
     padding: 5rem;
     margin: auto;
@@ -83,6 +84,33 @@ main h1 {
     background: rgb(0, 166, 226);
 }
 
+.hero img {
+    width: 100%;
+    height: 100%;
+    margin: 13px auto;
+    margin-top: 10%;
+    border: 1px solid rgba(0,0,0,.1);
+    object-fit: cover;
+}
+
+.herolabel {
+    position: absolute;
+    top: 255px;
+    left: 144px;
+    background: radial-gradient(#cfcfcf, #4d5b97);
+    border: 1px solid rgba(255, 255, 255, 0.75);
+	padding: 1.5rem;
+	box-shadow: 0 0 3rem #fff;
+	opacity: 0.75;
+}
+.herolabel p {
+	margin: 0;
+	padding: .25rem;
+	font-weight: 700;
+	font-size: 1.5rem;
+	font-family:"Great Vibes", serif;
+}
+
 footer {
     padding: 0.5rem;
     margin-top: 1.5rem;
@@ -100,7 +128,6 @@ footer p {
         display: none;
     }
 
-
     .navigation {
         flex-direction: row;
     }
@@ -113,5 +140,16 @@ footer p {
     body{
         justify-content: space-between;
         min-height: 100vh;
+    }
+
+    main{
+        margin: 0 auto;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        margin: 13px auto;
+        margin-top: 5%;
     }
 }
