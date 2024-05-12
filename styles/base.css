@@ -12,7 +12,7 @@
         display: flex;
         flex-direction: column;
         list-style: none;
-        padding: 1rem 2rem;
+        padding: 1rem;
     }
 
     .navalist a {
@@ -27,6 +27,10 @@
         color: #006aab;
     }
 
+    div label {
+        margin-top: 50px;
+    }
+
 
     #menu {
         font-size: 1.5rem;
@@ -37,6 +41,8 @@
         top: 1.8rem;
         right: 2.5rem;
     }
+
+
 
     /* when the button is clicked - the open class is toggled (added/removed) */
     .open a {
@@ -54,9 +60,8 @@
     main h1 {
         font-size: 21px;
         grid-column: 1;
-        margin-top: -5%;
+        margin-top: 8%;
     }
-
 
     .card {
         font-size: 16px;
@@ -72,17 +77,18 @@
         justify-content: space-between;
     }
 
-    footer{
+    footer {
         padding: 1rem;
     }
 }
 
 @media screen and (max-width: 518px) {
-        
-    body{
+
+    body {
         overflow-x: hidden;
     }
-      ul{
+
+    ul {
         display: block;
         min-width: 2rem;
         margin-left: -1.5rem;
@@ -90,11 +96,13 @@
 }
 
 @media screen and (max-width: 376px) {
-        
-    main{
+
+    main {
+        margin: 0 auto;
         overflow-x: hidden;
     }
-      ul{
+
+    ul {
         display: block;
         max-width: 5rem;
         min-width: 3rem;
