@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I-BUSINESS Chamber of Commerce</title>
+    <meta name="description" content=" I-Business Commerce chamber Site Plan">
+    <meta name="author" content="Steve Chrispin">
+
+    <!--meta Open Graph-->
+    <meta property="og:url" content="https://chrispinsteve.github.io/wdd230/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Steve CHRISPIN - WDD 230 - Web Frontend Development">
+    <meta property="og:description" content="Assignment portal">
+    <meta property="og:image" content="https://chrispinsteve.github.io/wdd230/chamber/images/I-BUSINESS.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" type="img/webp" href="images/ibusinessicon.webp">
+</head>
+
+<body>
+    <header>
+        <img src="images/I-BUSINESS.webp" alt="I-BUSINESS Logo">
+        <button id="menu"></button>
+        <nav class="navalist">
+            <a href="#">Home</a>
+            <a href="#">Discover</a>
+            <a href="#">Directory</a>
+            <a href="#">Join</a>
+            <div id="mode">
+                🌙
+            </div>
+
+        </nav>
+    </header>
+
+    <div class="general">
+
+        <div class="left-side disc">
+
+            <div class="left-side">
+                <a href="">Membership</a>
+                <a href="">News</a>
+
+                <a href="">Events</a>
+            </div>
+
+
+            <div class="head-nav">
+                <h1>Statstical Data</h1>
+                <p>Haiti is a market economy with low <br>
+                    labor costs and a major trading<br>
+                    partner in the United States. Haiti<br>
+                    has preferential access to the U.S.<br>
+                    market through the Hemispheric<br>
+                    Opportunity though Partnership (HOPE)<br>
+                    and the Economic Lift Program <br>
+                    Encouragement Acts (HELP), which provide<br>
+                    duty-free access to the U.S. market for a<br>
+                    range of textile products.</p>
+            </div>
+
+            <p><span class="label">Number Of visits: </span>
+                <span class="visits"></span><br>
+                <span class="side-content"></span>
+            </p>
+        </div>
+
+        <main class="Discover">
+            <h1 class="h11">Port-au-Prince Chamber of Commerce</h1>
+            <section class="content-disc">
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/sogebank.webp">
+                    <source media="(max-width: 350px)" srcset="images/sogebank">
+                    <img src="images/sogebank.webp" loading="lazy" alt="Table setting" width="500" height="250">
+                </picture>
+                <caption>SOGEBANK</caption>
+            </section>
+
+            <section class="content-disc2">
+                <picture>
+                    <source media="(max-width: 250px)" srcset="images/I-BUSINESS.webp">
+                    <source media="(max-width: 350px)" srcset="images/I-BUSINESS.webp">
+                    <img src="images/I-BUSINESS.webp" loading="lazy" alt="Table setting" width="500" height="150">
+                </picture>
+                <caption>I Business</caption>
+            </section>
+
+            <section class="content-disc3">
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/I-BUSINESS.webp">
+                    <source media="(max-width: 350px)" srcset="images/I-BUSINESS.webp">
+                    <img src="images/I-BUSINESS.webp" loading="lazy" alt="Table setting" width="500" height="150">
+                </picture>
+                <caption>I Business</caption>
+            </section>
+
+            <section class="weather-disc">
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/I-BUSINESS.webp">
+                    <source media="(max-width: 350px)" srcset="images/I-BUSINESS.webp">
+                    <img src="images/I-BUSINESS.webp" loading="lazy" alt="Table setting" width="500" height="150">
+                </picture>
+                <caption>I Business</caption>
+            </section>
+
+            <section class="weather-disc">
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/weather.webp">
+                    <source media="(max-width: 350px)" srcset="images/weather.webp">
+                    <img src="images/weather.webp" loading="lazy" alt="Table setting" width="400" height="150">
+                </picture>
+                <caption>Weather</caption>
+            </section>
+
+            <section class="weather-disc">
+                <picture>
+                    <source media="(max-width: 300px)" srcset="images/weather.webp">
+                    <source media="(max-width: 350px)" srcset="images/weather.webp">
+                    <img src="images/weather.webp" loading="lazy" alt="Table setting" width="400" height="150">
+                </picture>
+                <caption>Weather</caption>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <span id="date"></span>
+        <br>&copy;2024 Steve Chrispin - Tel : 509 5537-399
+        I-Business Commerce Chamber - wdd 230
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/chamber.js"></script>
+</body>
+
+</html>
