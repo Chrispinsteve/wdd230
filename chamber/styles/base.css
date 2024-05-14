@@ -62,7 +62,7 @@
         /* Espacement entre les éléments */
         padding: 0.1rem;
         border-radius: 21px;
-        background: gainsboro;
+        background: rgb(155, 155, 155);
     }
 
     div a {
@@ -113,4 +113,46 @@
     section img {
         border-radius: 13px;
     }
+}
+
+
+
+
+/* -------------DISCOVER------------*/
+.Discover {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0.3rem;
+    background: rgb(226, 226, 226);
+    border-radius: 21px;
+    margin: 1rem;
+}
+
+.disc {
+    display: flex;
+    /* Utilisation de Flexbox */
+    flex-direction: column;
+    /* Aligner les éléments de manière verticale */
+    justify-content: flex-start;
+    /* Alignement en haut */
+    align-items: flex-start;
+    /* Alignement à gauche */
+    padding: 1rem 1rem;
+    margin: 1rem;
+    border-radius: 21px;
+    background: rgb(226, 226, 226);
+}
+
+.head-nav{
+    display: block;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+    background: white;
+    border-radius: 8px;
+}
+
+.h11{
+    font-size: 18px;
+    text-align: center;
 }
