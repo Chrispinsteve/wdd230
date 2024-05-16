@@ -157,7 +157,8 @@ footer {
 .content-1,
 .content-2,
 .content-3,
-.weather {
+.weather,
+.event {
     display: grid;
     padding: 1rem;
     margin: 1rem;
