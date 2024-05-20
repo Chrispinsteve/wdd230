@@ -1,0 +1,220 @@
+/* Media Queries for screens smaller than 1170px */
+@media (max-width: 1170px) {
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "x";
+    }
+
+    .navalist {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 1rem 2rem;
+    }
+
+    .navalist a {
+        display: none;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #2389d2;
+    }
+
+    .navalist a:hover {
+        color: #006aab;
+    }
+
+    header span{
+        font-family: 'roboto', sans-serif;
+        margin-top: 3rem;
+    }
+
+    #menu {
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        border: 0;
+        background: none;
+        color: #000;
+        position: absolute;
+        top: 1.8rem;
+        right: 2.5rem;
+        cursor: pointer;
+    }
+
+    #mode {
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+    /* When the button is clicked - the open class is toggled (added/removed) */
+    .open a {
+        display: block;
+    }
+
+    header img {
+        width: 144px;
+        border-radius: 50%;
+        height: 100%;
+    }
+
+    header span {
+        margin-bottom: -5%;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 1170px){
+    #menu{
+    display: none;
+}
+}
+
+#mode {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px auto;
+    padding: 0.3rem;
+    background: white;
+    box-shadow: 0 0 5px rgba(129, 129, 129, 0.517);
+}
+
+nav {
+    display: flex;
+}
+
+header img {
+    width: 144px;
+    border-radius: 50%;
+}
+
+nav a {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(167, 0, 0);
+    padding: 2rem 3.34rem;
+}
+
+a:hover {
+    transition: all .55s ease;
+    border-bottom: 1px solid rgb(167, 0, 0);
+}
+
+footer {
+    padding: 0.5rem;
+    margin-top: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    background: rgb(128, 0, 0);
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+/*---------- FORM STYLING ----------*/
+input[type="radio"] {
+    display: none;
+    position: relative;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: left;
+}
+
+.stars > label {
+    color: gold;
+    width: 30px;
+    height: 30px;
+    font-size: 2rem;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.stars > label:hover {
+    color: #e7c530;
+    cursor: pointer;
+}
+
+.stars > label::before {
+    content: "\2606";
+}
+
+.stars input:checked ~ label::before {
+    content: "\2605";
+}
+
+/* Form layout and styling */
+form {
+    max-width: 55rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form1 fieldset {
+    margin: 2rem 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 1rem 5rem;
+}
+
+.form1 legend {
+    color: #445ba9;
+    padding: 0 .5rem;
+}
+
+.form1 label {
+    display: block;
+    color: #9c2c13;
+    padding-top: 1rem;
+    font-size: 21px;
+}
+
+.form1 div {
+    padding: 1rem;
+    color: #445ba9;
+}
+
+.form1 input[type="text"],
+.form1 input[type="password"],
+.form1 input[type="email"] {
+    background-color: #f8f8f8ee;
+    display: block;
+    border: 1px solid #d9d9d9;
+    border-radius: .75rem;
+    color: #555;
+    width: 13rem;
+    padding: .8rem;
+    max-width: 400px;
+    appearance: none;
+    margin-bottom: 1rem;
+}
+
+.form1 input[type="submit"] {
+    border: none;
+    border-radius: 5%;
+    color: white;
+    padding: 1rem 2rem;
+    background-image: linear-gradient(#9c2c13, #6f200e)
+}
