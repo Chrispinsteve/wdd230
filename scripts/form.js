@@ -22,10 +22,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
-
-
 /*----------- MENU BOTTON -----------*/
 
 const hamButton = document.querySelector("#menu");
@@ -38,9 +34,6 @@ hamButton.addEventListener("click", () => {
 
 const navigationLinks = document.querySelector('.navalist a');
 
-
-
-
 /*--------------GET DATE-------------*/
 
 
@@ -50,10 +43,6 @@ const Options = {
 document.querySelector('#date').textContent = new Date().toLocaleDateString('en-Us', Options);
 
 document.querySelector('#lastModified').textContent = new Date().toDateString('en-Us', Options)
-
-
-
-
 
 
 /*--------------------RANGE------------------ */
