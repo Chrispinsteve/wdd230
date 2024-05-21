@@ -149,11 +149,27 @@ footer {
     color: white;
 }
 
+.cta-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: #a70000;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-link:hover {
+    background-color: #f3ebeb;
+}
+
 /*---- "SECTION" and "CONTENTS" "ARTICLE"----*/
 .content-1,
 .content-2,
 .content-3,
-.weather {
+.weather,
+.event {
     display: grid;
     padding: 1rem;
     margin: 1rem;
@@ -176,6 +192,7 @@ article {
 section img {
     border-radius: 13px;
 }
+
 
 
 /* Ajoutez ces styles à la fin de votre fichier CSS */
@@ -291,7 +308,6 @@ section img {
     display: block;
     font-style: italic;
 }
-
 
 
 /*------------ TABLE ------------*/
