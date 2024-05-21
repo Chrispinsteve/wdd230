@@ -15,44 +15,55 @@ document.querySelector('#date').textContent = new Date().toLocaleDateString('en-
 
 document.querySelector('#lastModified').textContent = new Date().toDateString('en-Us', Options)
 
+
 /*-------------- "DARK" and "LIGHT" --------------*/
 const modeButton = document.querySelector('#mode');
-const header = document.querySelector('header');
 const main = document.querySelector('main');
 const divGeneral = document.querySelector('.general');
 const leftSide = document.querySelector('.left-side');
-const section = document.querySelector('section');
-const article = document.querySelector('article');
-const h11 = document.querySelector('.h11');
-const h1 = document.querySelector('h1');
-const paragraph = document.querySelector('p');
-const headNav = document.querySelector('.head-nav');
-
+const sections = document.querySelectorAll('section');
+const articles = document.querySelectorAll('article');
+const h1 = document.querySelector('.h11');
+const h3Elements = document.querySelectorAll('h3');
+const paraSpans = document.querySelectorAll('p span');
 
 modeButton.addEventListener('click', () => {
     if (modeButton.textContent.includes('🌙')) {
-
         divGeneral.style.background = '#363638';
-        leftSide.style.background = 'rgb(190, 190, 190)';
+        leftSide.style.background = '#7c7c7c';
         main.style.background = '#797979';
         h1.style.color = 'white';
-        h11.style.color = 'white';
-
-        headNav.style.background = '#797979';
-        headNav.style.color = "white";
+        
+        h3Elements.forEach(h3 => {
+            h3.style.color = 'white';
+        });
+        
+        paraSpans.forEach(span => {
+            span.style.color = 'white';
+        });
 
         modeButton.textContent = '🔆';
-    }
-    else {
-        divGeneral.style.background = 'whitesmoke'
+    } else {
+        divGeneral.style.background = 'whitesmoke';
+        leftSide.style.background = 'whitesmoke';
         main.style.background = 'rgb(226, 226, 226)';
         h1.style.color = 'rgb(68, 68, 68)';
-        h11.style.color = 'rgb(68, 68, 68)'
-        headNav.style.background = 'white';
-        headNav.style.color = 'rgb(68, 68, 68)';
+        
+        h3Elements.forEach(h3 => {
+            h3.style.color = 'rgb(68, 68, 68)';
+        });
+        
+        
+        paraSpans.forEach(span => {
+            span.style.color = 'black';
+        });
+
         modeButton.textContent = '🌙';
     }
-})
+});
+
+
+
 
 
 
@@ -93,6 +104,8 @@ if (lastVisit) {
 numVisits++;
 window.localStorage.setItem("numVisits-ls", numVisits);
 window.localStorage.setItem("lastVisit", new Date().toISOString());
+
+
 
 /*------------ FORM STYLING ------------*/
 // Function to get the current date and time in ISO format
