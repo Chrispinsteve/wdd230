@@ -9,6 +9,8 @@
     --zebra: hsl(0, 0%, 93%, 1);
 }
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -149,27 +151,11 @@ footer {
     color: white;
 }
 
-.cta-link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #ffffff;
-    font-family: 'Roboto', sans-serif;
-    color: #a70000;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-link:hover {
-    background-color: #f3ebeb;
-}
-
 /*---- "SECTION" and "CONTENTS" "ARTICLE"----*/
 .content-1,
 .content-2,
 .content-3,
-.weather,
-.event {
+.weather {
     display: grid;
     padding: 1rem;
     margin: 1rem;
@@ -192,7 +178,6 @@ article {
 section img {
     border-radius: 13px;
 }
-
 
 
 /* Ajoutez ces styles à la fin de votre fichier CSS */
@@ -309,6 +294,8 @@ section img {
     font-style: italic;
 }
 
+
+
 /*------------ TABLE ------------*/
 table {
     margin: 10px;
@@ -407,6 +394,3 @@ form input[type="email"] {
     padding: 1rem 2rem;
     background-image: linear-gradient(#9c2c13, #6f200e)
 }
-
-
-
