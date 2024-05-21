@@ -93,3 +93,12 @@ if (lastVisit) {
 numVisits++;
 window.localStorage.setItem("numVisits-ls", numVisits);
 window.localStorage.setItem("lastVisit", new Date().toISOString());
+
+/*------------ FORM STYLING ------------*/
+// Function to get the current date and time in ISO format
+function getCurrentTimestamp() {
+    return new Date().toISOString();
+}
+
+// Set the value of the hidden input field with the current date and time
+document.getElementById('timestamp').value = getCurrentTimestamp();
