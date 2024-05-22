@@ -42,7 +42,104 @@
 
         </nav>
     </header>
-    
+
+    <div class="general">
+        <div class="left-side disc">
+            <div class="left-side">
+                <a href="">Membership</a>
+                <a href="">News</a>
+                <a href="">Events</a>
+            </div>
+
+            <table>
+                <caption>Table 1: Account Feature Comparison</caption>
+                <thead>
+                    <tr>
+                        <th colspan="4" scope="colgroup">Members Benefits</th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th scope="col">Bronze</th>
+                        <th scope="col">Silver</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Publicity</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>Global Manager</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                        <td>✔️</td>
+                    </tr>
+                    <tr>
+                        <td>International Partner</td>
+                        <td>❌</td>
+                        <td>❌</td>
+                        <td>✔️</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p><span class="label">Number Of visits: </span>
+                <span class="visits"></span><br>
+                <span class="side-content"></span>
+            </p>
+        </div>
+
+        <main class="Discover">
+            <h1>Port-au-Prince Chamber of Commerce</h1>
+            <section class="content-1">
+                <form method="get" action="thankyou.html" id="form1">
+                    <fieldset>
+                        <legend title="Fill in the form to Join">Join</legend>
+                        <label for="firstname">First Name*<input type="text" name="fname" id="firstname" required placeholder="First Name"></label>
+                        <label for="lastname">Last Name*<input type="text" name="lname" id="lastname" required placeholder="Last Name"></label>
+                        <label for="title">Position*<input type="text" name="position" id="title" required pattern="[A-Za-z\s-]{7,}" placeholder="Title or position"></label>
+                        <label for="email">Email*<input type="email" name="Email" id="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="example@byui.edu"></label>
+                        <label for="tel">Phone*<input type="tel" name="phone" id="tel" required placeholder="123456789"></label>
+                        <label for="organization">Business/Organisation Name*<input type="text" name="organization" id="organization" required placeholder="Business/Organisation Name"></label>
+                        <label for="level">Membership*
+                            <select name="level" id="level" required>
+                                <option value="">Select a level</option>
+                                <option value="NP-Organization">Non Profit Organization</option>
+                                <option value="Bronze">Bronze Membership</option>
+                                <option value="Silver">Silver Membership</option>
+                                <option value="Gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label for="description">Organisation description<textarea name="description" id="description"></textarea></label>
+                        <input type="hidden" id="timestamp" name="timestamp">
+                        <button type="submit">Submit</button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <span id="date"></span>
+        <br>&copy;2024 Steve Chrispin - Tel: 509 5537-399
+        I-Business Commerce Chamber - wdd 230
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Function to get the current date and time in ISO format
+        function getCurrentTimestamp() {
+            return new Date().toISOString();
+        }
+
+        // Set the value of the hidden input field with the current date and time
+        document.getElementById('timestamp').value = getCurrentTimestamp();
+    </script>
+
+    <script src="scripts/chamber.js"></script>
 
 
 
