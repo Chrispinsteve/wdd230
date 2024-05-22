@@ -1,0 +1,80 @@
+{
+    "familyName": "Chrispin",
+    "date": "May 22 2024",
+    "numberMembers": 89,
+    "vistedBishopric": true,
+    "members": [
+        {
+            "Orion": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 Nov 2034",
+                    "gender": "Male"
+                }
+            ]
+        },
+        {
+            "Adhara": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 March 2028",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "Vega": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 June 2031",
+                    "gender": "Male"
+                }
+            ]
+        },
+        {
+            "Cosmo": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 Sept 2032",
+                    "gender": "Male"
+                }
+            ]
+        },
+        {
+            "Betelgious": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "30 Oct 2033",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "Saturne": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 Nov 2030",
+                    "gender": "Male"
+                }
+            ]
+        },
+        {
+            "Achird": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 Nov 2036",
+                    "gender": "Female"
+                }
+            ]
+        },
+        {
+            "Jupiter": [
+                {
+                    "Name": "CHRISPIN",
+                    "birthDate": "21 Nov 2036",
+                    "gender": "Female"
+                }
+            ]
+        }
+    ]
+}
