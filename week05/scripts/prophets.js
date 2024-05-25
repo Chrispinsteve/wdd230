@@ -16,5 +16,5 @@ const displayProphets = (prophets) => {
     //Create element to add to div.cards element
     let card = document.createElement('section');
     let fullName = document.createElement('__');
-    let portrait = document.createElement('img')
+    let portrait = document.createElement('img');
 }
