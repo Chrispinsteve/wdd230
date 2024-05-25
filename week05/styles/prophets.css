@@ -39,6 +39,11 @@ body {
     font-size: 1.2em;
     margin: 0.5em 0;
   }
+
+  h3 {
+    font-size: .8em;
+    margin: 0.5em 0;
+  }
   
   img {
     border-radius: 5px;
