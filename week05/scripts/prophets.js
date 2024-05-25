@@ -17,4 +17,19 @@ const displayProphets = (prophets) => {
     let card = document.createElement('section');
     let fullName = document.createElement('__');
     let portrait = document.createElement('img');
+
+
+    //Build h2 content out to show prophet's full name
+    fullName.textContent = `${prophets._____} ________`;
+
+    //Build the image portrait by setting all the relevant attributes
+    portrait.setAttribute('src', prophets.imageurl);
+    portrait.setAttribute('alt', `Portrait of ${prophets.____} ____________`);
+    portrait.setAttribute('loading', 'lazy');
+    portrait.setAttribute('width', '340');
+    portrait.setAttribute('heith', '440');
+
+    // Append the section(card) with the created elements
+    card.appendChild(_________) // fill in the blank
+    card.appendChild(portrait);
 }
