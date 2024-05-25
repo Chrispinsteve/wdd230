@@ -8,3 +8,9 @@ async function getProphetData(url){
     displayProphets(data.prophets);
 }
 getProphetData();
+
+const displayProphets = (prophets) => {
+    prophets.forEach((prophet) => {
+        
+    });
+}
