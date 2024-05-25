@@ -16,7 +16,7 @@ const displayProphets = (prophets) => {
         
         // Créer un élément h2 pour le nom complet
         let fullName = document.createElement('h2');
-        fullName.textContent = `${prophet.firstName} ${prophet.lastName}`;
+        fullName.textContent = `${prophet.name} ${prophet.lastname}`;
 
         // Créer un élément h3 pour la date et le lieu de naissance
         let birthDate = document.createElement('h3');
@@ -28,7 +28,7 @@ const displayProphets = (prophets) => {
         // Créer un élément img pour le portrait
         let portrait = document.createElement('img');
         portrait.setAttribute('src', prophet.imageurl);
-        portrait.setAttribute('alt', `Portrait of ${prophet.firstName} ${prophet.lastName}`);
+        portrait.setAttribute('alt', `Portrait of ${prophet.name} ${prophet.lastname}`);
         portrait.setAttribute('loading', 'lazy');
         portrait.setAttribute('width', '340');
         portrait.setAttribute('height', '440');
