@@ -10,6 +10,7 @@ async function apiFetch(url){
     try{
         let response = await fetch(url)
         let data = await response.json()
+        console.table(data)
     }
     catch(error){
         console.error('An error occurred:', error)
