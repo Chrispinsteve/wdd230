@@ -17,6 +17,10 @@ const displayProphets = (prophets) => {
         // Créer un élément h2 pour le nom complet
         let fullName = document.createElement('h2');
         fullName.textContent = `${prophet.name} ${prophet.lastname}`;
+
+        // Create h3 element for birthDate and place of birth
+        let placeBirth = document.createElement('h3');
+        placeBirth.textContent = `${prophet.placebirth}`;
         
         // Créer un élément img pour le portrait
         let portrait = document.createElement('img');
@@ -28,6 +32,7 @@ const displayProphets = (prophets) => {
         
         // Ajouter le h2 et l'image à la section
         card.appendChild(fullName);
+        card.appendChild(placeBirth);
         card.appendChild(portrait);
         
         // Ajouter la carte au conteneur de cartes
