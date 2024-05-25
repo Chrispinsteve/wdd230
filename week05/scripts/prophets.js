@@ -11,6 +11,10 @@ getProphetData();
 
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
-        
     });
+    
+    //Create element to add to div.cards element
+    let card = document.createElement('section');
+    let fullName = document.createElement('__');
+    let portrait = document.createElement('img')
 }
