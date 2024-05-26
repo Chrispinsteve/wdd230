@@ -4,6 +4,7 @@ const linksURL = "https://chrispinsteve.github.io/wdd230/data/links.json";
 async function getLinks() {
     const response = await fetch(linksURL);
     let data = await response.json();
-    console.log(data)
+    console.log(data);
+    displayLinks(data);
 }
 getLinks();
