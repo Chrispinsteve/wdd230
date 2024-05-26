@@ -1,5 +1,5 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=18.53921&lon=-72.335&appid=9a91868ee8db995a0699a868f975dfe6&units=imperial';
-const linksURL = "https://chrispinsteve.github.io/wdd230/data/links.json";
+const weatherURL = 'https://api.openweathermap.org/data/2.5/weather?lat=18.53921&lon=-72.335&appid=9a91868ee8db995a0699a868f975dfe6&units=imperial';
+const linksURL = 'https://chrispinsteve.github.io/wdd230/data/links.json';
 
 // Select HTML elements in the document
 const currentTemp = document.querySelector('#current-temp');
@@ -8,11 +8,12 @@ const captionDesc = document.querySelector('figcaption');
 const linkList = document.querySelector('#Activities');
 
 // Fetch and display weather data
-async function apiFetch() {
+async function fetchWeather() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(weatherURL);
         if (response.ok) {
             const data = await response.json();
+            console.log('Weather data:', data);  // Debugging log
             displayWeather(data);
         } else {
             throw new Error('Unable to fetch weather data');
@@ -23,23 +24,33 @@ async function apiFetch() {
 }
 
 function displayWeather(data) {
+    // Display the temperature in Fahrenheit
     currentTemp.innerHTML = `Weather: ${data.main.temp}&deg;F`;
 
+    // Get the icon code from the weather data
     const iconCode = data.weather[0].icon;
-    const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
-    const desc = data.weather[0].description;
 
+    // Construct the icon URL
+    const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+
+    // Get the description from the weather data
+    let desc = data.weather[0].description;
+
+    // Set the icon URL and alt text
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
+
+    // Set the description text
     captionDesc.textContent = desc;
 }
 
 // Fetch and display links data
-async function getLinks() {
+async function fetchLinks() {
     try {
         const response = await fetch(linksURL);
         if (response.ok) {
             const data = await response.json();
+            console.log('Links data:', data);  // Debugging log
             displayLinks(data.weeks);
         } else {
             throw new Error('Unable to fetch links data');
@@ -72,5 +83,5 @@ function displayLinks(weeks) {
 }
 
 // Initialize the data fetches
-apiFetch();
-getLinks();
+fetchWeather();
+fetchLinks();
