@@ -63,18 +63,15 @@
                 {
                     "url": "week04/tablebuilt.html",
                     "title": "Table"
-                },
-                {
-                    "url": "week03/responsive.html",
-                    "title": "Responsive"
                 }
             ]
-        },{
-            "week": "Week 3",
+        },
+        {
+            "week": "Week 5",
             "links":[
                 {
-                    "url": "week03/bom.html",
-                    "title": "Bom"
+                    "url": "week05/prophets.html",
+                    "title": "Latter-Day Prophets"
                 },
 
                 {
