@@ -28,7 +28,7 @@ function displayResult(data) {
     const iconCode = data.weather[0].icon;
 
     // Construct the icon URL
-    const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+    const iconsrc = `https://openweathermap.org/img/w/10d.png`;
 
     // Get the description from the weather data
     let desc = data.weather[0].description;
