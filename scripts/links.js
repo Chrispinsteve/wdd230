@@ -29,8 +29,6 @@ function displayLinks(weeks){
 }
 
 
-
-
 //-------------------------- WEATHER --------------------------\\
 async function apiFetch() {
     try {
