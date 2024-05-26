@@ -10,36 +10,27 @@ const linkList = document.querySelector('#Activities');
 // Fetch and display weather data
 async function apiFetch() {
     try {
-        let response = await fetch(url);
+        const response = await fetch(url);
         if (response.ok) {
-            let data = await response.json();
+            const data = await response.json();
             displayWeather(data);
         } else {
-            throw Error(await response.text());
+            throw new Error('Unable to fetch weather data');
         }
     } catch (error) {
-        console.log('An error occurred:', error);
+        console.error('An error occurred:', error);
     }
 }
 
 function displayWeather(data) {
-    // Display the temperature in Fahrenheit
     currentTemp.innerHTML = `Weather: ${data.main.temp}&deg;F`;
 
-    // Get the icon code from the weather data
     const iconCode = data.weather[0].icon;
-
-    // Construct the icon URL
     const iconsrc = `https://openweathermap.org/img/w/${iconCode}.png`;
+    const desc = data.weather[0].description;
 
-    // Get the description from the weather data
-    let desc = data.weather[0].description;
-
-    // Set the icon URL and alt text
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-
-    // Set the description text
     captionDesc.textContent = desc;
 }
 
@@ -48,34 +39,33 @@ async function getLinks() {
     try {
         const response = await fetch(linksURL);
         if (response.ok) {
-            let data = await response.json();
+            const data = await response.json();
             displayLinks(data.weeks);
         } else {
-            throw Error(await response.text());
+            throw new Error('Unable to fetch links data');
         }
     } catch (error) {
-        console.log('An error occurred:', error);
+        console.error('An error occurred:', error);
     }
 }
 
 function displayLinks(weeks) {
     weeks.forEach(week => {
-        let weekItem = document.createElement('li');
-        let weekTitle = document.createElement('h3');
+        const weekItem = document.createElement('li');
+        const weekTitle = document.createElement('h3');
         weekTitle.textContent = week.week;
         weekItem.appendChild(weekTitle);
-        
-        let weekLinksList = document.createElement('ul');
-        
+
+        const weekLinksList = document.createElement('ul');
         week.links.forEach(link => {
-            let listItem = document.createElement('li');
-            let anchor = document.createElement('a');
+            const listItem = document.createElement('li');
+            const anchor = document.createElement('a');
             anchor.href = link.url;
             anchor.textContent = link.title;
             listItem.appendChild(anchor);
             weekLinksList.appendChild(listItem);
         });
-        
+
         weekItem.appendChild(weekLinksList);
         linkList.appendChild(weekItem);
     });
