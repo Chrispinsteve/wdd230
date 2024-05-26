@@ -8,6 +8,6 @@ async function getLinks() {
 }
 getLinks();
 
-function displayLinks(data){
+function displayLinks(weeks){
 
 }
