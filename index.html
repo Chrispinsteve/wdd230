@@ -5,27 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Steve CHRISPIN - WDD 230 - Web Frontend Development</title>
-    <meta name="description"
-        content="Steve CHRISPIN - WDD 230 - Web Frontend Development course assignment portal. Hover and Wayfinding Lab. Profile Photo Lab">
+    <meta name="description" content="Steve CHRISPIN - WDD 230 - Web Frontend Development course assignment portal. Hover and Wayfinding Lab. Profile Photo Lab">
     <meta name="author" content="Steve Chrispin">
-
     <!--meta Open Graph-->
     <meta property="og:url" content="https://chrispinsteve.github.io/wdd230/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Steve CHRISPIN - WDD 230 - Web Frontend Development">
     <meta property="og:description" content="Assignment portal">
     <meta property="og:image" content="https://chrispinsteve.github.io/wdd230/images/house.png">
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
-
     <link rel="shortcut icon" type="img/png" href="images/ibusinessicon.png">
 </head>
 
@@ -33,9 +26,7 @@
     <header>
         <img src="images/profile.webp" alt="Profile Photo Lab" width="200">
         <span>Steve Chrispin</span>
-        <div id="mode">
-            🌙
-        </div>
+        <div id="mode">🌙</div>
     </header>
 
     <button id="menu"></button>
@@ -60,32 +51,29 @@
 
         <section class="card">
             <h2>Learning Activities</h2>
-            <ul id="Activities">
-        
-            </ul>
+            <ul id="Activities"></ul>
         </section>
 
         <section class="card">
             <h2>Information</h2>
             <p id="current-temp">Weather: </p>
-            <p><span class="label">Number Of visits: </span>
-                <span class="visits"></span>
-            </p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </figure>
+            <p><span class="label">Number Of visits: </span><span class="visits"></span></p>
         </section>
     </main>
 
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d121048.04380827247!2d-72.302592!3d18.5401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sht!4v1715494183917!5m2!1sfr!2sht"
-        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d121048.04380827247!2d-72.302592!3d18.5401344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sht!4v1715494183917!5m2!1sfr!2sht" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <footer>
         <p>&copy; <span id="date"></span> | Steve Chrispin | Haiti</p>
         <p id="lastModified"></p>
     </footer>
 
-
     <script src="scripts/menuButton.js"></script>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 
 </html>
