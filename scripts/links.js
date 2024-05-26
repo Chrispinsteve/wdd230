@@ -49,7 +49,7 @@ async function getLinks() {
         const response = await fetch(linksURL);
         if (response.ok) {
             let data = await response.json();
-            displayLinks(data);
+            displayLinks(data.weeks);
         } else {
             throw Error(await response.text());
         }
@@ -60,12 +60,24 @@ async function getLinks() {
 
 function displayLinks(weeks) {
     weeks.forEach(week => {
-        let listItem = document.createElement('li');
-        let link = document.createElement('a');
-        link.href = week.url;
-        link.textContent = `Week ${week.week}`;
-        listItem.appendChild(link);
-        linkList.appendChild(listItem);
+        let weekItem = document.createElement('li');
+        let weekTitle = document.createElement('h3');
+        weekTitle.textContent = week.week;
+        weekItem.appendChild(weekTitle);
+        
+        let weekLinksList = document.createElement('ul');
+        
+        week.links.forEach(link => {
+            let listItem = document.createElement('li');
+            let anchor = document.createElement('a');
+            anchor.href = link.url;
+            anchor.textContent = link.title;
+            listItem.appendChild(anchor);
+            weekLinksList.appendChild(listItem);
+        });
+        
+        weekItem.appendChild(weekLinksList);
+        linkList.appendChild(weekItem);
     });
 }
 
