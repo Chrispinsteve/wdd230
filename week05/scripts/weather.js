@@ -29,9 +29,9 @@ function displayResult(data){
     const iconsrc = `https://openweathermap.org/img/w/10d.png`;
 
     let desc = data.weather[0].description;
-    
-    weatherIcon.setAttribute('src', data.icon)
-    weatherIncon.setAttribute('alt', 'weathet icon');
+
+    weatherIcon.setAttribute('src', iconsrc)
+    weatherIncon.setAttribute('alt', data.weather[0].description);
     captionDesc.textContent = `${desc}`;
 }
 
