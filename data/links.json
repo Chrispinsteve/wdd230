@@ -1,0 +1,91 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holygrail Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Chamber of Commerce"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 2",
+            "links":[
+                {
+                    "url": "week02/bom.html",
+                    "title": "Bom"
+                },
+
+                {
+                    "url": "week02/design.html",
+                    "title": "Design"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 3",
+            "links":[
+                {
+                    "url": "week03/bom.html",
+                    "title": "Bom"
+                },
+
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week03/responsive.html",
+                    "title": "Responsive"
+                }
+            ]
+        },
+
+        {
+            "week": "Week 4",
+            "links":[
+                {
+                    "url": "week04/record.html",
+                    "title": "Visit Record"
+                },
+
+                {
+                    "url": "week04/tablebuilt.html",
+                    "title": "Table"
+                },
+                {
+                    "url": "week03/responsive.html",
+                    "title": "Responsive"
+                }
+            ]
+        },{
+            "week": "Week 3",
+            "links":[
+                {
+                    "url": "week03/bom.html",
+                    "title": "Bom"
+                },
+
+                {
+                    "url": "week03/lazyload.html",
+                    "title": "Design"
+                },
+                {
+                    "url": "week03/responsive.html",
+                    "title": "Responsive"
+                }
+            ]
+        }
+    ]
+}
