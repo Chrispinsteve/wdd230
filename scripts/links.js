@@ -9,10 +9,6 @@ const currentTemp = document.querySelector('#current-temp');
 const linkList = document.querySelector('#Activities')
 
 
-
-
-
-
 //Data WEEKS INFORMATION
 async function getLinks() {
     const response = await fetch(linksURL);
@@ -30,4 +26,44 @@ function displayLinks(weeks){
         listItem.appendChild(link);
         linkList.appendChild(listItem);
     })
+}
+
+
+
+
+//-------------------------- WEATHER --------------------------\\
+async function apiFetch() {
+    try {
+        let response = await fetch(url);
+        if (response.ok) {
+            let data = await response.json();
+            displayResult(data);
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log('An error occurred:', error);
+    }
+}
+apiFetch();
+
+function displayResult(data) {
+    // Display the temperature in Fahrenheit
+    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+
+    // Get the icon code from the weather data
+    const iconCode = data.weather[0].icon;
+
+    // Construct the icon URL
+    const iconsrc = `https://openweathermap.org/img/w/10d.png`;
+
+    // Get the description from the weather data
+    let desc = data.weather[0].description;
+
+    // Set the icon URL and alt text
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', desc);
+
+    // Set the description text
+    captionDesc.textContent = desc;
 }
