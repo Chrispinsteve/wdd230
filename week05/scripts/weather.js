@@ -6,13 +6,30 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 
 
-async function apiFetch(url){
-    try{
+async function apiFetch() {
+    try {
         let response = await fetch(url)
-        let data = await response.json()
-        console.table(data)
+        if (response.ok) {
+            let data = await response.json()
+            console.log(data)// For Testing
+            //displayResult(data);
+        } 
+        else {
+            throw Error(await response.text());
+        }
     }
-    catch(error){
-        console.error('An error occurred:', error)
+    catch (error) {
+        console.log('An error occurred:', error);
     }
 }
+apiFetch();
+
+function displayResult(data){
+    currentTemp.innerHTML = `${data.temp}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/10d.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', data.icon)
+    weatherIncon.setAttribute('alt', 'weathet icon');
+    captionDesc.textContent = `${desc}`;
+}
+
