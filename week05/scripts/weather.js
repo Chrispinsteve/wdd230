@@ -31,7 +31,7 @@ function displayResult(data){
     let desc = data.weather[0].description;
 
     weatherIcon.setAttribute('src', iconsrc)
-    weatherIncon.setAttribute('alt', data.weather[0].description);
+    weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = `${desc}`;
 }
 
