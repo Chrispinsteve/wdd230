@@ -47,7 +47,7 @@ apiFetch();
 
 function displayResult(data) {
     // Display the temperature in Fahrenheit
-    currentTemp.innerHTML = `${data.main.temp}&deg;F`;
+    currentTemp.innerHTML = `Weather: ${data.main.temp}&deg;F`;
 
     // Get the icon code from the weather data
     const iconCode = data.weather[0].icon;
