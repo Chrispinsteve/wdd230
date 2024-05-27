@@ -44,6 +44,10 @@ function displayWeather(data) {
     captionDesc.textContent = desc;
 }
 
+
+
+//----------[  DATA WEEKS LEARNING ACTIVITIES  ]--------- FRON LINKS.JSON ---------//
+
 // Fetch and display links data
 async function fetchLinks() {
     try {
