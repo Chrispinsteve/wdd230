@@ -13,7 +13,7 @@ async function displayLinks() {
 }
 
 
-function discoverMember() {
+function discoverMember(members) {
     Members.forEach(member => {
         let memberItem = document.createElement('li');
         let memberName = document.createElement('h3');
