@@ -26,7 +26,7 @@ function displayMembers(members) {
     const section = document.querySelector('.content-1');
     section.innerHTML = '';
 
-    Members.forEach(member => {
+    members.forEach(member => {
 
         const memberArticle = document.createElement('article');
         memberArticle.classList.add('member');
