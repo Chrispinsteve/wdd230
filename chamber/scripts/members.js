@@ -6,9 +6,18 @@ const article = document.querySelector('.article');
 const image = document.querySelector('#image-main');
 
 async function displayLinks() {
-    const response = await fetch(linkMembers);
-    console.table(data)//display data 
-    displayMembers(data.members);
+    try {
+        const response = await fetch(linkMembers);
+        if (!response.ok) {
+            throw new Error('Something does not work');
+        }
+        const data = await response.json()
+        console.table(data)//display data 
+        displayMembers(data.members);
+    }
+    catch (error) {
+        console.error('Oups! There is an error: ', error)
+    }
 }
 
 
@@ -24,7 +33,7 @@ function displayMembers(members) {
 
         const memberName = document.createElement('h3');
         memberName.textContent = member.name;
-        
+
         const memberImage = document.createElement('img');
         memberImage.setAttribute('src', member.image);
         memberImage.setAttribute('alt', member.name);
@@ -43,5 +52,18 @@ function displayMembers(members) {
         memberUrl.setAttribute('href', member.url);
         memberUrl.textContent = `Visit website`;
 
-    })
+        memberArticle.appendChild(memberImage);
+        memberArticle.appendChild(memberName);
+        memberArticle.appendChild(memberLevel);
+        memberArticle.appendChild(memberPhone);
+        memberArticle.appendChild(memberAdress);
+        memberArticle.appendChild(memberUrl);
+
+        section.appendChild(memberArticle);
+
+    });
 }
+
+displayLinks();
+displayMembers();
+
