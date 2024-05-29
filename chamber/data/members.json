@@ -1,0 +1,71 @@
+{
+    "Members": [
+        {
+            "member": {
+                "name": "SOGEBANK",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+
+        {
+            "member": {
+                "name": "Barbancourt",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "Comme il Faut",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "BRANA",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "SHODEKOSA",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "Rivoli",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "Delimart",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        },
+        {
+            "member": {
+                "name": "Decameroon Indigo",
+                "phone": "+(509) 2229-5000",
+                "level": "Gold",
+                "addresse": "Port-au-Prince Haiti"
+            }
+        }
+        
+        
+    ]
+}
