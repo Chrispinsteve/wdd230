@@ -1,6 +1,9 @@
-const  article = document.querySelector('.article');
+
 const linkMembers = "https://github.com/Chrispinsteve/wdd230/blob/main/chamber/data/members.json";
 
+//Get into the html document
+const  article = document.querySelector('.article');
+const image = document.querySelector('#image-main');
 
 async function displayLinks(){
     const response = await fetch(linkMembers);
