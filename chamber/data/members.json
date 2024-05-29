@@ -4,9 +4,10 @@
             "member": {
                 "name": "SOGEBANK",
                 "phone": "+(509) 2229-5000",
-                "level": "Gold",
+                "level": "Silver",
                 "address": "Port-au-Prince Haiti",
-                "url": "https://www.sogebank.com/contactez-nous/"
+                "url": "https://www.sogebank.com/contactez-nous/",
+                "image": "https://www.brana.ht/wp-content/uploads/2018/06/Brana_footer1.png"
             }
         },
 
@@ -16,7 +17,8 @@
                 "phone": "+(509) 2816-3090 | 2811-8080",
                 "level": "Gold",
                 "address": "16, Route Nationale #1, Damien Port-au-Prince, Haiti",
-                "url": "https://www.barbancourt.com/rhums-haitiens/vieilli-15-ans/"
+                "url": "https://www.barbancourt.com/rhums-haitiens/vieilli-15-ans/",
+                "image": "https://www.barbancourt.com/_nuxt/img/Logo_white.6fbac40.png"
             }
         },
         {
@@ -25,7 +27,8 @@
                 "phone": "+1 800-575-7491",
                 "level": "Gold",
                 "address": "P.O. Box 797, Port-au-Prince Haiti",
-                "url": "https://commeilfaut2.com/fr/index.php"
+                "url": "https://commeilfaut2.com/fr/index.php",
+                "image": "https://commeilfaut2.com/images/logo.png"
             }
         },
         {
@@ -34,7 +37,8 @@
                 "phone": "+(509) 2813-0025",
                 "level": "Gold",
                 "address": "Boulevard Toussaint LouvertureBoulevard Toussaint Louverture, Haiti",
-                "url": "https://www.brana.ht/"
+                "url": "https://www.brana.ht/",
+                "image": "https://www.sogebank.com/wp-content/uploads/2021/12/logo-sogebank.png"
             }
         },
         {
@@ -42,38 +46,40 @@
                 "name": "SHODEKOSA",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "address": "Port-au-Prince Haiti",
-                "url": ""
+                "address": "Route Nationale #1, Port-au-Prince",
+                "url": "",
+                "image": "https://www.brana.ht/wp-content/uploads/2018/06/Brana_footer1.png"
             }
         },
         {
             "member": {
                 "name": "Rivoli",
-                "phone": "+(509) 2229-5000",
-                "level": "Gold",
-                "address": "Port-au-Prince Haiti",
-                "url": ""
+                "phone": "+(509) 2948-2626",
+                "level": "Silver",
+                "address": "Angles Rue Faubert et Rue Oge Petion-Ville, 6140",
+                "url": "https://www.rivoligroup.com/",
+                "image": "https://www.rivoligroup.com/application/themes/rivoli/assets/images/logo.svg"
             }
         },
         {
             "member": {
                 "name": "Delimart",
-                "phone": "+(509) 2229-5000",
-                "level": "Gold",
-                "address": "Port-au-Prince Haiti",
-                "url": ""
+                "phone": "+(509) 2811-1098",
+                "level": "Silver",
+                "address": "148 Ave Jean-Paul II, Port-au-Prince",
+                "url": "https://www.delimart.ht/",
+                "image": "https://www.delimart.ht/img/logo-delimart-curve.png"
             }
         },
         {
             "member": {
                 "name": "Decameroon Indigo",
-                "phone": "+(509) 2229-5000",
+                "phone": "+(509)2815-0100",
                 "level": "Gold",
-                "address": "Port-au-Prince Haiti",
-                "url": ""
+                "address": "Côte des Arcadins, Montrouis - Haïti",
+                "url": "https://www.decameron.com/fr/otr-destinations/haiti/cote-des-arcadins/royal-decameron-indigo-beach-resort-spa",
+                "image": "https://www.decameron.com/images/logos/logo-decameron-all-inclusive.png"
             }
         }
-        
-        
     ]
 }
