@@ -63,10 +63,6 @@ modeButton.addEventListener('click', () => {
 });
 
 
-
-
-
-
 // 1️⃣ Initialize display element variables
 const visitsDisplay = document.querySelector(".visits");
 const sideContent = document.querySelector(".side-content");
