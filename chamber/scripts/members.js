@@ -19,7 +19,8 @@ function discoverMember() {
         let memberName = document.createElement('h3');
         let imageSrc = member.image;
 
-        image.setAttribute('src', imageSrc)
+        image.setAttribute('src', imageSrc);
+        image.setAttribute('alt', "image main")
         memberName.textContent = member.name;
         memberItem.appendChild(memberName);
     })
