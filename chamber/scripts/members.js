@@ -13,14 +13,31 @@ async function displayLinks() {
 
 
 function displayMembers(members) {
-    Members.forEach(member => {
-        let memberItem = document.createElement('li');
-        let memberName = document.createElement('h3');
-        let imageSrc = member.image;
 
-        image.setAttribute('src', imageSrc);
-        image.setAttribute('alt', "image main")
+    const section = document.querySelector('.content-1');
+    section.innerHTML = '';
+
+    Members.forEach(member => {
+
+        const memberArticle = document.createElement('article');
+        memberArticle.classList.add('member');
+
+        const memberName = document.createElement('h3');
         memberName.textContent = member.name;
-        memberItem.appendChild(memberName);
+        
+        const memberImage = document.createElement('img');
+        memberImage.setAttribute('src', member.image);
+        memberImage.setAttribute('alt', member.name);
+        memberImage.setAttribute('width', '300');
+
+        const memberLevel = document.createElement('h4');
+        memberLevel.textContent = `Level ${member.level}`;
+
+        const memberPhone = document.createElement('p');
+        memberPhone.textContent = `Phone ${member.phone}`;
+
+        const memberAdress = document.createElement('p');
+        memberAdress.textContent = `Adress ${member.adress}`;
+
     })
 }
