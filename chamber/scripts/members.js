@@ -7,9 +7,8 @@ const image = document.querySelector('#image-main');
 
 async function displayLinks() {
     const response = await fetch(linkMembers);
-    const data = await response.json();
     console.table(data)//display data 
-    displayMembers(data.Members);
+    displayMembers(data.members);
 }
 
 
