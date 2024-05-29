@@ -3,8 +3,8 @@ const linkMembers = "https://github.com/Chrispinsteve/wdd230/blob/main/chamber/d
 
 
 async function displayLinks(){
-    let response = await fetch(linkMembers);
-    let data = await response.json();
+    const response = await fetch(linkMembers);
+    const data = await response.json();
     console.table(data)//display data 
     displayMembers(data.Members);
 }
@@ -12,6 +12,6 @@ async function displayLinks(){
 
 function discoverMember(){
     Members.forEach(member => {
-        
+
     })
 }
