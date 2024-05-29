@@ -5,32 +5,36 @@
                 "name": "SOGEBANK",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Port-au-Prince Haiti",
+                "url": "https://www.sogebank.com/contactez-nous/"
             }
         },
 
         {
             "member": {
-                "name": "Barbancourt",
-                "phone": "+(509) 2229-5000",
+                "name": " Rhum Barbancourt",
+                "phone": "+(509) 2816-3090 | 2811-8080",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "16, Route Nationale #1, Damien Port-au-Prince, Haiti",
+                "url": "https://www.barbancourt.com/rhums-haitiens/vieilli-15-ans/"
             }
         },
         {
             "member": {
                 "name": "Comme il Faut",
-                "phone": "+(509) 2229-5000",
+                "phone": "+1 800-575-7491",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "P.O. Box 797, Port-au-Prince Haiti",
+                "url": "https://commeilfaut2.com/fr/index.php"
             }
         },
         {
             "member": {
                 "name": "BRANA",
-                "phone": "+(509) 2229-5000",
+                "phone": "+(509) 2813-0025",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Boulevard Toussaint LouvertureBoulevard Toussaint Louverture, Haiti",
+                "url": "https://www.brana.ht/"
             }
         },
         {
@@ -38,7 +42,8 @@
                 "name": "SHODEKOSA",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Port-au-Prince Haiti",
+                "url": ""
             }
         },
         {
@@ -46,7 +51,8 @@
                 "name": "Rivoli",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Port-au-Prince Haiti",
+                "url": ""
             }
         },
         {
@@ -54,7 +60,8 @@
                 "name": "Delimart",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Port-au-Prince Haiti",
+                "url": ""
             }
         },
         {
@@ -62,7 +69,8 @@
                 "name": "Decameroon Indigo",
                 "phone": "+(509) 2229-5000",
                 "level": "Gold",
-                "addresse": "Port-au-Prince Haiti"
+                "address": "Port-au-Prince Haiti",
+                "url": ""
             }
         }
         
