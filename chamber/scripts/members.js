@@ -31,13 +31,17 @@ function displayMembers(members) {
         memberImage.setAttribute('width', '300');
 
         const memberLevel = document.createElement('h4');
-        memberLevel.textContent = `Level ${member.level}`;
+        memberLevel.textContent = `Level: ${member.level}`;
 
         const memberPhone = document.createElement('p');
-        memberPhone.textContent = `Phone ${member.phone}`;
+        memberPhone.textContent = `Phone: ${member.phone}`;
 
         const memberAdress = document.createElement('p');
-        memberAdress.textContent = `Adress ${member.adress}`;
+        memberAdress.textContent = `Adress: ${member.address}`;
+
+        const memberUrl = document.createElement('a');
+        memberUrl.setAttribute('href', member.url);
+        memberUrl.textContent = `Visit website`;
 
     })
 }
