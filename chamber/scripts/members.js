@@ -6,10 +6,12 @@ async function displayLinks(){
     let response = await fetch(linkMembers);
     let data = await response.json();
     console.table(data)//display data 
-    displayMembers(data.member);
+    displayMembers(data.Members);
 }
 
 
 function discoverMember(){
-
+    Members.forEach(member => {
+        
+    })
 }
