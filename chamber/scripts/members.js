@@ -1,4 +1,4 @@
-const linkMembers = "https://raw.githubusercontent.com/Chrispinsteve/wdd230/main/chamber/data/members.json";
+const linkMembers = "https://chrispinsteve.github.io/wdd230/chamber/data/members.json";
 
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', (event) => {
