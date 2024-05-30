@@ -40,7 +40,7 @@ function displayMembers(members) {
         const memberImage = document.createElement('img');
         memberImage.setAttribute('src', member.image);
         memberImage.setAttribute('alt', member.name);
-        memberImage.setAttribute('width', '300');
+        memberImage.setAttribute('width', '200');
 
         const memberLevel = document.createElement('h4');
         memberLevel.textContent = `Level: ${member.level}`;
