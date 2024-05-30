@@ -1,52 +1,58 @@
+const linkMembers = "https://raw.githubusercontent.com/Chrispinsteve/wdd230/main/chamber/data/members.json";
 
-const linkMembers = "https://github.com/Chrispinsteve/wdd230/blob/main/chamber/data/members.json";
+// Ensure the DOM is fully loaded before executing the script
+document.addEventListener('DOMContentLoaded', (event) => {
+    console.log('DOM fully loaded and parsed'); // Debugging log
+    displayLinks();
+});
 
-//Get into the html document
+// Get into the HTML document
+const section = document.querySelector('.content-1');
 
 async function displayLinks() {
     try {
         const response = await fetch(linkMembers);
         if (!response.ok) {
-            throw new Error('Something does not work');
+            throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        console.table(data); // Display data 
+        console.log('Data fetched successfully:', data); // Debugging log
         displayMembers(data.members);
     } catch (error) {
         console.error('Oups! There is an error: ', error);
     }
 }
 
-
 function displayMembers(members) {
-
-    //Get into the html document
-    const section = document.querySelector('.content-1');
     section.innerHTML = '';
+    console.log('Displaying members:', members); // Debugging log
 
-    members.forEach(member => {
+    members.forEach(memberData => {
+        const member = memberData.member;
+        console.log('Processing member:', member); // Debugging log
+
         const memberArticle = document.createElement('article');
         memberArticle.classList.add('member');
 
         const memberName = document.createElement('h3');
-        memberName.textContent = member.member.name;
+        memberName.textContent = member.name;
 
         const memberImage = document.createElement('img');
-        memberImage.setAttribute('src', member.member.image);
-        memberImage.setAttribute('alt', member.member.name);
+        memberImage.setAttribute('src', member.image);
+        memberImage.setAttribute('alt', member.name);
         memberImage.setAttribute('width', '300');
 
         const memberLevel = document.createElement('h4');
-        memberLevel.textContent = `Level: ${member.member.level}`;
+        memberLevel.textContent = `Level: ${member.level}`;
 
         const memberPhone = document.createElement('p');
-        memberPhone.textContent = `Phone: ${member.member.phone}`;
+        memberPhone.textContent = `Phone: ${member.phone}`;
 
         const memberAddress = document.createElement('p');
-        memberAddress.textContent = `Address: ${member.member.address}`;
+        memberAddress.textContent = `Address: ${member.address}`;
 
         const memberUrl = document.createElement('a');
-        memberUrl.setAttribute('href', member.member.url);
+        memberUrl.setAttribute('href', member.url);
         memberUrl.textContent = 'Visit website';
 
         memberArticle.appendChild(memberImage);
@@ -59,6 +65,3 @@ function displayMembers(members) {
         section.appendChild(memberArticle);
     });
 }
-
-displayLinks();
-
