@@ -63,6 +63,7 @@ function displayMembers(members) {
         memberArticle.appendChild(memberUrl);
 
         section.appendChild(memberArticle);
+        section.style.background = 'rgb(229, 217, 217)';
     });
 }
 
