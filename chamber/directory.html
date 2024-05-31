@@ -7,7 +7,7 @@
     <meta name="description" content="Directory I-Business Commerce chamber Site Plan">
     <meta name="author" content="Steve Chrispin">
 
-    <!-- Meta Open Graph -->
+    <!--meta Open Graph-->
     <meta property="og:url" content="https://chrispinsteve.github.io/wdd230/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Steve CHRISPIN - WDD 230 - Web Frontend Development">
@@ -22,6 +22,11 @@
     <link rel="stylesheet" href="styles/larger.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="icon" type="img/png" href="images/ibusinessicon.png">
+    <style>
+        .hide-images img {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -34,6 +39,7 @@
             <a href="join.html">Join</a>
             <div id="mode">🌙</div>
         </nav>
+        <button id="toggleView">Toggle View</button> <!-- Add this button -->
     </header>
 
     <div class="general">
@@ -45,8 +51,7 @@
 
         <main class="right-side">
             <h1>Port-au-Prince Chamber of Commerce</h1>
-            <button id="toggleView">Toggle View</button>
-            <section class="content-1 grid"></section>
+            <section class="content-1"></section>
         </main>
     </div>
 
