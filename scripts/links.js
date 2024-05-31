@@ -7,7 +7,7 @@ const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
 const weekLinks = document.querySelector('#Activities');
 
-// Fetch and display weather data
+// ----------- Fetch and display weather data -------------\\
 async function fetchWeather() {
     try {
         const response = await fetch(weatherURL);
@@ -24,10 +24,10 @@ async function fetchWeather() {
 }
 
 function displayWeather(data) {
-    // Display the temperature in Fahrenheit
+    //------------ Display the temperature in Fahrenheit ----------\\
     currentTemp.innerHTML = `Weather: ${data.main.temp}&deg;F`;
 
-    // Get the icon code from the weather data
+    //------------ icon code from the weather data ------------\\
     const iconCode = data.weather[0].icon;
 
     // Construct the icon URL
@@ -36,11 +36,11 @@ function displayWeather(data) {
     // Get the description from the weather data
     let desc = data.weather[0].description;
 
-    // Set the icon URL and alt text
+    //------------- icon URL and alt text ------------\\
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
 
-    // Set the description text
+    //------------- description text --------------\\
     captionDesc.textContent = desc;
 }
 
@@ -86,6 +86,5 @@ function displayLinks(weeks) {
     });
 }
 
-// Initialize the data fetches
 fetchWeather();
 fetchLinks();
