@@ -1,12 +1,12 @@
-const linkMembers = "https://chrispinsteve.github.io/wdd230/chamber/data/members.json";
-
-// Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed'); // Debugging log
     displayLinks();
+    const toggleButton = document.getElementById('toggleView');
+    toggleButton.addEventListener('click', toggleView);
 });
 
-// Get into the HTML document
+let isGridView = true;
+
 const section = document.querySelector('.content-1');
 
 async function displayLinks() {
@@ -33,6 +33,11 @@ function displayMembers(members) {
 
         const memberArticle = document.createElement('article');
         memberArticle.classList.add('member');
+        if (isGridView) {
+            memberArticle.classList.add('grid');
+        } else {
+            memberArticle.classList.add('list');
+        }
 
         const memberName = document.createElement('h3');
         memberName.textContent = member.name;
@@ -40,7 +45,7 @@ function displayMembers(members) {
         const memberImage = document.createElement('img');
         memberImage.setAttribute('src', member.image);
         memberImage.setAttribute('alt', member.name);
-        memberImage.setAttribute('width', '200');
+        memberImage.setAttribute('width', '300');
 
         const memberLevel = document.createElement('h4');
         memberLevel.textContent = `Level: ${member.level}`;
@@ -64,4 +69,9 @@ function displayMembers(members) {
 
         section.appendChild(memberArticle);
     });
+}
+
+function toggleView() {
+    isGridView = !isGridView;
+    displayLinks();
 }
