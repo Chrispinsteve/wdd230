@@ -1,21 +1,16 @@
-const linkMembers = "https://chrispinsteve.github.io/wdd230/chamber/data/members.json";
+const linkMembers = "https://raw.githubusercontent.com/Chrispinsteve/wdd230/main/chamber/data/members.json";
 
 // Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed'); // Debugging log
     displayLinks();
-    const toggleButton = document.getElementById('toggleView');
-    toggleButton.addEventListener('click', toggleView);
+    addToggleViewListener();
 });
 
-let diffView = true;
-
+// Get into the HTML document
 const section = document.querySelector('.content-1');
+const toggleViewButton = document.getElementById('toggleView');
 
-
-
-
-//================ ASYNC FUNCTION ================\\
 async function displayLinks() {
     try {
         const response = await fetch(linkMembers);
@@ -73,8 +68,8 @@ function displayMembers(members) {
     });
 }
 
-function toggleView() {
-    diffView = !diffView;
-    section.classList.toggle('grid', diffView);
-    section.classList.toggle('list', !diffView);
+function addToggleViewListener() {
+    toggleViewButton.addEventListener('click', () => {
+        section.classList.toggle('hide-images');
+    });
 }

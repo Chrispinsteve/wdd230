@@ -411,6 +411,10 @@ form input[type="email"] {
 
 /*--------- TOGLE VIEW ---------*/
 
+.hide-images img {
+    display: none;
+}
+
 #toggleView {
     font-family: Arial, Helvetica, sans-serif;
     padding: 10px 20px;
