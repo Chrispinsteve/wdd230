@@ -12,6 +12,10 @@ let isGridView = true;
 
 const section = document.querySelector('.content-1');
 
+
+
+
+//================ ASYNC FUNCTION ================\\
 async function displayLinks() {
     try {
         const response = await fetch(linkMembers);
