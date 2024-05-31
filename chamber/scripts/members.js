@@ -61,9 +61,10 @@ function displayMembers(members) {
         memberArticle.appendChild(memberPhone);
         memberArticle.appendChild(memberAddress);
         memberArticle.appendChild(memberUrl);
+        memberArticle.style.background = 'rgb(229, 217, 217)';
 
         section.appendChild(memberArticle);
-        section.style.background = 'rgb(229, 217, 217)';
+
     });
 }
 
