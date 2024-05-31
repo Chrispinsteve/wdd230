@@ -427,6 +427,11 @@ form input[type="email"] {
     cursor: pointer;
 }
 
+#toggleView:hover {
+    background:#c00909df;
+    font-size: 18px;
+}
+
 .content-1 {
     display: grid;
     gap: 20px;
