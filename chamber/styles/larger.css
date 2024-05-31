@@ -413,6 +413,7 @@ form input[type="email"] {
 #toggleView {
     padding: 10px 20px;
     margin: 20px 0;
+    border-radius: 8px;
     cursor: pointer;
 }
 
