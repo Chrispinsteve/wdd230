@@ -5,7 +5,7 @@ const linksURL = 'https://chrispinsteve.github.io/wdd230/data/links.json';
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
-const linkList = document.querySelector('#Activities');
+const weekLinks = document.querySelector('#Activities');
 
 // Fetch and display weather data
 async function fetchWeather() {
@@ -82,7 +82,7 @@ function displayLinks(weeks) {
         });
 
         weekItem.appendChild(weekLinksList);
-        linkList.appendChild(weekItem);
+        weekLinks.appendChild(weekItem);
     });
 }
 
