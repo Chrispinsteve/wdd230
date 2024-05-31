@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
     toggleButton.addEventListener('click', toggleView);
 });
 
-let isGridView = true;
+let diffView = true;
 
 const section = document.querySelector('.content-1');
 
@@ -74,7 +74,7 @@ function displayMembers(members) {
 }
 
 function toggleView() {
-    isGridView = !isGridView;
-    section.classList.toggle('grid', isGridView);
-    section.classList.toggle('list', !isGridView);
+    diffView = !diffView;
+    section.classList.toggle('grid', diffView);
+    section.classList.toggle('list', !diffView);
 }
