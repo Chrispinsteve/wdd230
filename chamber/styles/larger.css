@@ -411,6 +411,11 @@ form input[type="email"] {
 
 
 /* -------------- List and Grid Members  -------------  */
+.content-1 {
+    display: grid;
+    gap: 20px;
+}
+
 .member {
     background-color: #fff;
     padding: 20px;
