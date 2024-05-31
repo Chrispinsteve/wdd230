@@ -409,13 +409,13 @@ form input[type="email"] {
     background-image: linear-gradient(#9c2c13, #6f200e)
 }
 
+
 #toggleView {
     padding: 10px 20px;
     margin: 20px 0;
     cursor: pointer;
 }
 
-/* -------------- List and Grid Members  -------------  */
 .content-1 {
     display: grid;
     gap: 20px;

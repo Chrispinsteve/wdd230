@@ -1,3 +1,6 @@
+const linkMembers = "https://raw.githubusercontent.com/Chrispinsteve/wdd230/main/chamber/data/members.json";
+
+// Ensure the DOM is fully loaded before executing the script
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed'); // Debugging log
     displayLinks();
@@ -33,11 +36,6 @@ function displayMembers(members) {
 
         const memberArticle = document.createElement('article');
         memberArticle.classList.add('member');
-        if (isGridView) {
-            memberArticle.classList.add('grid');
-        } else {
-            memberArticle.classList.add('list');
-        }
 
         const memberName = document.createElement('h3');
         memberName.textContent = member.name;
@@ -73,5 +71,6 @@ function displayMembers(members) {
 
 function toggleView() {
     isGridView = !isGridView;
-    displayLinks();
+    section.classList.toggle('grid', isGridView);
+    section.classList.toggle('list', !isGridView);
 }
