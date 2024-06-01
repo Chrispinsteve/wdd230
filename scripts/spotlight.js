@@ -1,38 +1,42 @@
 const linkMembers = "https://raw.githubusercontent.com/Chrispinsteve/wdd230/main/chamber/data/members.json";
 
-document.addEventListener('DOMContentLoaded', (event) => {
-    console.log('DOM fully loaded and parsed'); // Debugging log
-    displayLinks();
-    addToggleViewListener(); // Add listener after DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+    displaySpotlight();
 });
 
-const section = document.querySelector('.content-1');
-const toggleViewButton = document.getElementById('toggleView');
+const spotlightSection = document.getElementById('spotlight-section');
 
-async function displayLinks() {
+async function displaySpotlight() {
     try {
         const response = await fetch(linkMembers);
         if (!response.ok) {
             throw new Error('Failed to fetch data');
         }
         const data = await response.json();
-        console.log('Data fetched successfully:', data); // Debugging log
-        displayMembers(data.members);
+        const qualifiedMembers = data.members.filter(memberData => {
+            const level = memberData.member.level.toLowerCase();
+            return level === 'silver' || level === 'gold';
+        });
+        const selectedMembers = getRandomMembers(qualifiedMembers, 2, 3);
+        displayMembers(selectedMembers);
     } catch (error) {
-        console.error('Oups! There is an error: ', error);
+        console.error('Error fetching or processing data:', error);
     }
 }
 
-function displayMembers(members) {
-    section.innerHTML = '';
-    console.log('Displaying members:', members); // Debugging log
+function getRandomMembers(members, min, max) {
+    const count = Math.floor(Math.random() * (max - min + 1)) + min;
+    const shuffled = members.sort(() => 0.5 - Math.random());
+    return shuffled.slice(0, count);
+}
 
+function displayMembers(members) {
+    spotlightSection.innerHTML = '';
     members.forEach(memberData => {
         const member = memberData.member;
-        console.log('Processing member:', member); // Debugging log
 
         const memberArticle = document.createElement('article');
-        memberArticle.classList.add('member');
+        memberArticle.classList.add('member-spotlight');
 
         const memberName = document.createElement('h3');
         memberName.textContent = member.name;
@@ -61,16 +65,7 @@ function displayMembers(members) {
         memberArticle.appendChild(memberPhone);
         memberArticle.appendChild(memberAddress);
         memberArticle.appendChild(memberUrl);
-        memberArticle.style.background = 'rgb(229, 217, 217)';
 
-        section.appendChild(memberArticle);
-
+        spotlightSection.appendChild(memberArticle);
     });
 }
-
-function addToggleViewListener() {
-    toggleViewButton.addEventListener('click', () => {
-        section.classList.toggle('hide-images');
-    });
-}
-
