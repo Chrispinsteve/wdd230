@@ -67,7 +67,7 @@ async function fetchLinks() {
 function displayLinks(weeks) {
     weeks.forEach(week => {
         const weekItem = document.createElement('li');
-        const titleW = document.createElement('h3');
+        const TitleW = document.createElement('h3');
         TitleW.textContent = week.week;
         weekItem.appendChild(TitleW);
 
