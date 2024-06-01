@@ -425,6 +425,7 @@ form input[type="email"] {
     color: white;
     background: var(--back);
     cursor: pointer;
+    transition: all 0.2s ease;
 }
 
 #toggleView:hover {
