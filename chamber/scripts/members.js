@@ -23,6 +23,13 @@ async function displayLinks() {
     }
 }
 
+
+function randomMembers(member, min, max) {
+    const step1 = Math.floor(Math.random() * (max - min + 1)) + min;
+    const step2 = member.sort(() => 0.5 - Math.random());
+    return step2.slice(0, count);
+}
+
 function displayMembers(members) {
     section.innerHTML = '';
     console.log('Displaying members:', members); // Debugging log
@@ -73,3 +80,4 @@ function addToggleViewListener() {
         section.classList.toggle('hide-images');
     });
 }
+
