@@ -1,0 +1,303 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Chakra Petch", sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: white;
+}
+
+header::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270.59deg, #e52626da 0%, #1a66c39f 28.53%, #9dc3e64a 75.52%);
+}
+
+
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+.navlist{
+    display: flex;
+}
+
+.navlist a{
+    color: rgb(10, 79, 148);
+    margin-left: 60px;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.navlist a:hover {
+    border-bottom: 2px solid rgb(10, 79, 148);
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #ffffff 0%, #ffffff 28.53%, #ffffff 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(10, 79, 148);
+    margin-bottom: 40px;
+}
+.hero-text h2{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 90px;
+    line-height: 1;
+    color: rgb(10, 79, 148);
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(10, 79, 148);
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: rgb(10, 79, 148);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img{
+    width: 700px;
+    height: auto;
+}
+
+.hero-text a{
+    display: inline-block;
+    color: rgb(10, 79, 148);
+    background: #b8d5fe;
+    padding: 12px 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid rgb(0, 72, 187);
+    transform: translateX(5.55px);
+}
+
+.hero-text a.ctaa{
+    background: transparent;
+    border: 1px solid rgb(0, 23, 127);
+    margin-left: 20px;
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+/*screen/////-----------------------------------------//////*/
+
+@media(max-width: 1535px){
+    header{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s
+    }
+
+    .scroll-down{
+        right: 3%;
+        transition: .2s
+    }
+}
+
+@media(max-width: 1460px){
+    section{
+        padding: 0 12%;
+        transition: .2s;
+    }
+}
+@media(max-width: 1340px){
+    .hero-img img{
+        width: 44%;
+        height: auto;
+    }
+    .hero-text h2{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text h5{
+        margin-bottom: 25px;
+    }
+}
+@media(max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img img{
+        width: 334px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+}
+@media(max-width: 990px){
+    #menu-icone{
+        display: block;
+    }
+    .navalist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: #1b3b70;
+        display: flex;
+        align-items: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+    .navalist a{
+        margin-left: 0;
+        display: flex;
+        margin: 7px 0;
+    }
+    .navalist.open{
+        right: 0;
+    }
+}
+
+/*---------------FOOTER-----------------*/
+footer {
+    background-color: #00496d;
+    /* Background color of the footer */
+    color: #fff;
+    /* Text color */
+    padding: 5px;
+    /* Padding at the top and bottom */
+    justify-content: center;
+    justify-items: center;
+  
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin-right: 20px;
+  
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-left: 84px;
+  }
+  
+  .footer-section p {
+    margin-bottom: 13px;
+    margin-left: 84px;
+    line-height: 150%;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 5px;
+    margin-left: 84px;
+  }
+  
+  .footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .copyright {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  /* Existing CSS styles remain the same */
+  
+  .join-button {
+    text-align: center;
+    margin-top: -13px;
+    margin-left: 34px;
+  }
+  
+  .join-button button {
+    padding: 10px 13px;
+    background-color: #ffffff;
+    /* Blue color for the button */
+    color: #ff2d2d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 13px rgba(0, 0, 0, 0.479);
+  }
+  
+  .join-button button:hover {
+    background-color: #fefefe;
+    transition: 0.5s;
+    transform: translateY(-5px);
+    /* Darker blue color on hover */
+  }
+  
+  /*--------------------END OF THE FOOTER------------------------*/
