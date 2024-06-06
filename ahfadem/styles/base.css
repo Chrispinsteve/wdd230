@@ -1,4 +1,12 @@
 @media screen and (max-width: 955px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    footer {
+        width: 100%;
+    }
     #menu::before {
         content: "☰";
     }
@@ -101,7 +109,6 @@
         margin-bottom: 8%;
         min-width: 21rem;
         padding: 2rem 2rem;
-        
         background: whitesmoke;
         border-radius: 0.5rem;
         box-shadow: 0 0 20px rgba(69, 83, 88, 0.479);
@@ -109,6 +116,10 @@
 }
 
 @media screen and (max-width: 755px) {
+
+    body{
+        overflow-x: hidden;
+    }
 
     .hero-text {
         position: relative;
