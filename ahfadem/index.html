@@ -36,15 +36,12 @@
         <img src="images/logo-ahfadem.webp" alt="Logo Ahfadem" width="200" height="65">
         <button id="menu"></button>
         <nav class="navlist">
-            <a href="index.html">Accueil</a></li>
-            <a href="realisation">Réalisations</a></li>
-            <a href="about.html">À propos de nous</a></li>
-            <a class="join-button">
-                <button onclick="window.location.href='don.html'">Rejoindre Ahfadem</button>
-            </a>
+            <a href="index.html">Accueil</a>
+            <a href="realisation.html">Réalisations</a>
+            <a href="about.html">À propos de nous</a>
+            <a href="don.html" class="join-button">Rejoindre Ahfadem</a>
         </nav>
     </header>
-
 
     <section class="hero">
         <div class="hero-text">
@@ -92,7 +89,7 @@
 
             <aside class="box">
                 <div class="box-content">
-                    <img src="images/ahfadem/ahfadem/para_scolaire/8_edited.webp" alt="profile" width="286"
+                    <img src="images/ahfadem/ahfadem/para_Scolaire/8_edited.webp" alt="profile" width="286"
                         style="border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; margin-top: -3%;">
                     <h3>Para Scolaire</h3>
                     <p>
@@ -106,7 +103,7 @@
 
             <aside class="box">
                 <div class="box-content">
-                    <img src="images/ahfadem/ahfadem/para_scolaire/DSC_4587_JPG.webp" alt="profile" width="286"
+                    <img src="images/ahfadem/ahfadem/para_Scolaire/DSC_4587_JPG.webp" alt="profile" width="286"
                         style="border-top-left-radius: 0.5rem; border-top-right-radius: 0.5rem; margin-top: -3%">
                     <h3>Culture</h3>
                     <p>
@@ -207,9 +204,12 @@
             </div>
             <div class="footer-section">
                 <h3>Quick Links</h3>
-                <a href="index.html">Accueil</a>
-                <a href="realisation">Réalisations</a>
-                <a href="about.html">À propos de nous</a>
+                <ul>
+                    <li><a href="ahfadem.html">Accueil</a></li> <!-- Changed "Home" to "Accueil" -->
+                    <li><a href="#">Réalisations</a></li> <!-- Translated "Achievements" -->
+                    <li><a href="about.html">À propos de nous</a></li> <!-- Translated "About us" -->
+                    <li><a href="#">infos</a></li>
+                </ul>
             </div>
             <div class="footer-section">
                 <h3>infos Information</h3>
@@ -219,7 +219,7 @@
             </div>
         </div>
         <div class="join-button">
-            <button onclick="window.location.href='don.html'">Faire un don</button>
+            <a href="don.html">Faire un don</a>
         </div>
         <div class="copyright">
             <p>&copy; 2024 Ahfadem. All rights reserved.</p>
