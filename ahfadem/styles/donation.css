@@ -1,0 +1,43 @@
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(360deg, #ffffff 0%, #ffffff 28.53%, #ffffff 75.52%);
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+section{
+    padding: 0 19%;
+}
+
+.hero-text h5{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(10, 79, 148);
+    margin-bottom: 40px;
+}
+.hero-text h2{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 90px;
+    line-height: 1;
+    color: rgb(10, 79, 148);
+    margin: 0 0 45px;
+}
+.hero-text h4{
+    font-family: font-family "Montserrat", sans-serif ;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgb(10, 79, 148);
+    margin-bottom: 10px;
+}
+.hero-text p{
+    color: rgb(10, 79, 148);
+    font-size: 15px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
